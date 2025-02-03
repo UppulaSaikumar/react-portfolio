@@ -1,0 +1,18 @@
+body {
+    margin: 0;
+    overflow-x: hidden; /* Prevent horizontal scroll */
+  }
+  
+  .slick-slider {
+    max-width: 100%; /* Ensure slider doesn’t exceed the viewport width */
+    overflow: hidden; /* Prevent content overflow */
+  }
+  
+  .slick-list {
+    overflow: hidden; /* Prevent slides from spilling out */
+  }
+  
+  .slick-track {
+    display: flex;
+  }
+  
