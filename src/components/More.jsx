@@ -2,6 +2,7 @@ export default function More() {
   return (
     <div className="bg-gray-50 py-24 sm:py-32" id="support">
       <div className="mx-auto max-w-2xl px-6 lg:max-w-7xl lg:px-8">
+        <h4 className="text-center text-base/7 font-semibold text-indigo-600">Why Me!</h4>
         <h2 className="text-center text-base/7 font-semibold text-indigo-600">Accelerate Your Project's Success</h2>
         <p className="mx-auto mt-2 max-w-lg text-balance text-center text-4xl font-semibold tracking-tight text-gray-950 sm:text-5xl">
           Comprehensive Solutions for Modern Web Development

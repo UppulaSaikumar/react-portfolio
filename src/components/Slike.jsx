@@ -3,18 +3,35 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "./Carousel.css";
-import Navbar from "./Navbar";
 
 const AutoCarousel = () => {
   const settings = {
     dots: false,
-    infinite: true, // Ensures the loop is continuous
-    speed: 10000, // Adjusted for slow smooth transition
-    slidesToShow: 12,
-    slidesToScroll: 12,
+    infinite: true,
+    speed: 10000,
     autoplay: true,
-    autoplaySpeed: 0, // Ensures continuous motion without stopping
-    cssEase: "linear", // For continuous linear transition without interruptions
+    autoplaySpeed: 0,
+    cssEase: "linear",
+
+    slidesToShow: 6, // Default for larger screens
+    slidesToScroll: 6,
+
+    responsive: [
+      {
+        breakpoint: 1024, // Tablets
+        settings: {
+          slidesToShow: 4,
+          slidesToScroll: 4,
+        },
+      },
+      {
+        breakpoint: 768, // Mobile devices
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+        },
+      },
+    ],
   };
 
   const techStacks = [
@@ -82,49 +99,26 @@ const AutoCarousel = () => {
   ];
 
   return (
-    <>
-      <div
-        className="relative isolate overflow-hidden py-12 sm:py-16"
-        id="skills"
-      >
-        {/* Slider */}
-        <div className="mt-16">
-          <Slider {...settings}>
-            {techStacks.map((tech, index) => (
-              <div
-                key={index}
-                style={{
-                  display: "flex",
-                  justifyContent: "center",
-                  alignItems: "center",
-                  background: "#333",
-                  height: "120px",
-                  borderRadius: "8px",
-                }}
-              >
-                <img
-                  src={tech.icon}
-                  alt={tech.name}
-                  style={{
-                    height: "80px",
-                    filter: "invert(0)",
-                  }}
-                />
-                <span
-                  style={{
-                    color: "#000000",
-                    fontSize: "1.2rem",
-                    marginLeft: "1rem",
-                  }}
-                >
-                  {tech.name}
-                </span>
-              </div>
-            ))}
-          </Slider>
-        </div>
+    <div
+      className="relative isolate overflow-hidden py-12 sm:py-16"
+      id="skills"
+    >
+      <div className="mt-16">
+        <Slider {...settings}>
+          {techStacks.map((tech, index) => (
+            <div
+              key={index}
+              className="flex flex-col items-center justify-center rounded-lg p-4"
+            >
+              <img src={tech.icon} alt={tech.name} className="h-16 sm:h-20" />
+              <span className="text-white text-sm sm:text-base mt-2">
+                {tech.name}
+              </span>
+            </div>
+          ))}
+        </Slider>
       </div>
-    </>
+    </div>
   );
 };
 

@@ -29,7 +29,7 @@ export default function Hero() {
             <div className="lg:max-w-lg">
               <h2 className="text-base/7 font-semibold text-indigo-600">Sai Kumar</h2>
               <p className="mt-2 text-pretty text-2xl font-semibold tracking-tight text-gray-900 sm:text-2xl">
-               Full Stack Developer | Problem Solver |
+               Full Stack Developer | Problem Solver | Freelancer
               </p>
               <p className="mt-6 text-lg/8 text-gray-600">
               passionate about building scalable applications and solving complex problems. Enthusiastic about DevOps, system design, and continuous learning.

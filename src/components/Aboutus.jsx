@@ -10,7 +10,7 @@ const links = [
 
 const stats = [
   { name: "Years of Experience", value: "1½" },
-  { name: "Projects Completed", value: "20+" },
+  { name: "Projects Completed", value: "15+" },
   {
     name: "Languages & Frameworks",
     value: "C, C++, Java, JavaScript, ReactJS, NodeJS, and more",
