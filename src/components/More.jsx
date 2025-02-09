@@ -23,7 +23,7 @@ export default function More() {
                 <div className="absolute inset-x-10 bottom-0 top-10 overflow-hidden rounded-t-[12cqw] border-x-[3cqw] border-t-[3cqw] border-gray-700 bg-gray-900 shadow-2xl">
                   <img
                     className="size-full object-cover object-top"
-                    src="https://tailwindui.com/plus/img/component-images/bento-03-mobile-friendly.png"
+                    src="https://tailwindui.com/plus-assets/img/component-images/bento-03-mobile-friendly.png"
                     alt="Mobile friendly example"
                   />
                 </div>
@@ -43,7 +43,7 @@ export default function More() {
               <div className="flex flex-1 items-center justify-center px-8 max-lg:pb-12 max-lg:pt-10 sm:px-10 lg:pb-2">
                 <img
                   className="w-full max-lg:max-w-xs"
-                  src="https://tailwindui.com/plus/img/component-images/bento-03-performance.png"
+                  src="https://tailwindui.com/plus-assets/img/component-images/bento-03-performance.png"
                   alt="Performance image"
                 />
               </div>
@@ -62,7 +62,7 @@ export default function More() {
               <div className="flex flex-1 items-center [container-type:inline-size] max-lg:py-6 lg:pb-2">
                 <img
                   className="h-[min(152px,40cqw)] object-cover"
-                  src="https://tailwindui.com/plus/img/component-images/bento-03-security.png"
+                  src="https://tailwindui.com/plus-assets/img/component-images/bento-03-security.png"
                   alt="Security"
                 />
               </div>
